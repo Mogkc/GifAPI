@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Topical, G-Rated Gifs</title>
+
+    <!-- A meta to stop chrome security overreach -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body class="container bg-info">
+    <h1 class="row text-center">See Topical, G-Rated Gifs</h1>
+    <div class="row">
+        <section id="buttons-area" class="col-md-8"></section>
+        <aside id="generated-buttons" class="col-md-4 card">
+            <div class="card-header">Add Your Own Topic</div>
+            <div class="card-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="search">New Topic:</label>
+                        <input type="text" class="form-control" id="new-topic">
+                    </div>
+                    <button type="submit" class="btn btn-default" id="add-topic">Add Topic</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+    <section id="gifs-area" class="row"></section>
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
